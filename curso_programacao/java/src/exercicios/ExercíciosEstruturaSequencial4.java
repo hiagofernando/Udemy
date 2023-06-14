@@ -1,19 +1,26 @@
 package exercicios;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ExercíciosEstruturaSequencial4 {
 
 	public static void main(String[] args) {
 		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		int numF, numH;
+		double salario, numVH;
 		
-		int resultado = a + b;
+		numF = sc.nextInt();
+		numH = sc.nextInt();
+		numVH = sc.nextDouble();
 		
-		System.out.printf("A soma de %d + %d é = %d%n", a, b, resultado);
+		salario = numH * numVH;
+		
+		System.out.println("Number = " + numF);
+		System.out.printf("Salary = %.2f%n", salario);
 		System.out.println();
 		
 		sc.close();
