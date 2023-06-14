@@ -22,6 +22,7 @@ public class ExercíciosEstruturaSequencial3{
 		System.out.printf("Diferencça = %d%n", Diferenca);
 		System.out.println();
 		
+		
 		sc.close();
 	}
 
