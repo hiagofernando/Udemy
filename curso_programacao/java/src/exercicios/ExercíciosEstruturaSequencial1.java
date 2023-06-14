@@ -1,0 +1,22 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExercíciosEstruturaSequencial1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		int resultado = a + b;
+		
+		System.out.printf("A soma de %d + %d é = %d%n", a, b, resultado);
+		System.out.println();
+		
+		sc.close();
+	}
+
+}
