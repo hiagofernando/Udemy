@@ -10,25 +10,26 @@ public class ExercíciosEstruturaSequencial6 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int cod1, qtd1, cod2, qtd2;
-		double vlunit1, vlunit2, total;
+		double A, B, C, triangulo, quadrado, 
+		circulo, trapezio, retangulo;
 		
-		cod1 = sc.nextInt();
-		qtd1 = sc.nextInt();
-		vlunit1 = sc.nextDouble();
-		//System.out.printf("Codigo = " + cod1, "Quantidade = " + qtd1, "Valor Unitario = " + vlunit1);
+		A = sc.nextDouble();
+		B = sc.nextDouble();
+		C = sc.nextDouble();
 		
 		
-		cod2 = sc.nextInt();
-		qtd2 = sc.nextInt();
-		vlunit2 = sc.nextDouble();
-		//System.out.printf("Codigo = " + cod2, "Quantidade = " + qtd2, "Valor Unitario = " + vlunit2);
-	
-		total =  vlunit1 * qtd1 + vlunit2 * qtd2;
+		triangulo = A * C / 2.0;
+		circulo = 3.14159 * C * C;
+		trapezio = (A + B) / 2.0 * C;
+		quadrado = B * B;
+		retangulo = A * B;
 
 		
-		System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
-		System.out.println();
+		System.out.printf("TRIANGULO: %.3f%n", triangulo);
+		System.out.printf("CIRCULO: %.3f%n", circulo);
+		System.out.printf("TRAPEZIO: %.3f%n", trapezio);
+		System.out.printf("QUADRADO: %.3f%n", quadrado);
+		System.out.printf("RETANGULO: %.3f%n", retangulo);
 		
 		sc.close();
 	}
